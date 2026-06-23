@@ -27,17 +27,5 @@ function main() {
 }
 
 function testCase() {
-    let n = Number(readline());
-    let x = 10;
-    const a = [];
-    while (n) {
-        const r = n % x;
-        if (r) {
-            a.push(r);
-        }
-        n -= r;
-        x *= 10;
-    }
-    console.log(a.length);
-    console.log(a.reduce((r, c) => (!r ? c : `${r} ${c}`), ''));
+    //
 }
