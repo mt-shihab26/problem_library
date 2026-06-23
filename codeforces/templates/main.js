@@ -27,5 +27,5 @@ function main() {
 }
 
 function testCase() {
-    //
+    console.log('Hello World!');
 }

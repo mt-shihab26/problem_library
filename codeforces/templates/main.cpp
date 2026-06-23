@@ -22,5 +22,5 @@ int main() {
 }
 
 void test_case() {
-    //
+    cout << "Hello World!\n";
 }
