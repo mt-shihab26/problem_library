@@ -13,5 +13,6 @@ while ($t--) {
 
 function testCase()
 {
-    $n = intval(readline()));
+    $n = intval(readline());
+    readline();
 }
