@@ -1,6 +1,11 @@
 <?php
 
-$t = intval(trim(fgets(STDIN)));
+function readline()
+{
+    return fgets(STDIN);
+}
+
+$t = intval(trim(readline()));
 
 while ($t--) {
     testCase();
@@ -8,5 +13,5 @@ while ($t--) {
 
 function testCase()
 {
-    echo "Hello World\n";
+    $n = intval(readline()));
 }

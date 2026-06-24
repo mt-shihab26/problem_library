@@ -27,5 +27,20 @@ function main() {
 }
 
 function testCase() {
-    console.log('Hello World!');
+    let n = Number(readline());
+    let zero_count = 0;
+    let negative_count = 0;
+    readline()
+        .split(' ')
+        .map((x) => Number(x))
+        .forEach((x) => {
+            if (x === 0) {
+                zero_count++;
+            } else if (x === -1) {
+                negative_count++;
+            }
+        });
+    let r = zero_count;
+    r += (negative_count % 2) * 2;
+    console.log(r);
 }
