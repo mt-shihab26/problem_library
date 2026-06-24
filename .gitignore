@@ -8,3 +8,5 @@ input.txt
 output.txt
 *.out
 node_modules
+vendor
+
