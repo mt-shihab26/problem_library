@@ -1,11 +1,11 @@
 <?php
 
-function readline()
+function _readline()
 {
     return fgets(STDIN);
 }
 
-$t = intval(trim(readline()));
+$t = intval(trim(_readline()));
 
 while ($t--) {
     testCase();

@@ -1,11 +1,11 @@
 <?php
 
-function readline()
+function _readline()
 {
-    return fgets(STDIN);
+    return strval(fgets(STDIN) ?? '');
 }
 
-$t = intval(trim(readline()));
+$t = intval(trim(_readline()));
 
 while ($t--) {
     testCase();
@@ -13,6 +13,18 @@ while ($t--) {
 
 function testCase()
 {
-    $n = intval(readline());
-    readline();
+    $n = intval(_readline());
+    $zeroCount = 0;
+    $negativeCount = 0;
+    foreach (array_map(fn ($v) => intval($v), explode(' ', _readline())) as $item) {
+        switch ($item) {
+            case 0:
+                $zeroCount++;
+            case -1:
+                $negativeCount++;
+        }
+    }
+    $r = $zeroCount;
+    $r += (($negativeCount % 2) * 2);
+    echo $r."\n";
 }
